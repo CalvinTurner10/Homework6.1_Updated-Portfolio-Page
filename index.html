@@ -19,7 +19,7 @@
 
 <body>
 <!-- navbar -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-lg navbar-light bg-light" id= "navbar">
   <div class="container">
     <a class="navbar-brand fw-bold" href="#">Portfolio</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -31,13 +31,13 @@
           <a class="nav-link" href="#">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">About</a>
+          <a class="nav-link" href="#about">About</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Work</a>
+          <a class="nav-link" href="#work">Work</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Contact</a>
+          <a class="nav-link" href="#contact">Contact</a>
         </li>
       
        
@@ -96,8 +96,8 @@
 </section>
 <!-- Work -->
 <section id="work">
-  <div class="container">
-    <div class="row">
+  <div class="container my-5 py-5">
+    <div class="row mb-5">
       <div class="col-12">
         <h1 class="fw-bold text-center"> Work</h1>
         <hr>
@@ -107,7 +107,7 @@
     <div class="col-md-4">
       <div class="card p-4" style="width: 18rem;">
         <img src="./Assets/Images/code-refactor.png" class="card-img-top" alt="...">
-        <div class="card-body">
+        <div class="card-body text-center">
           <h3>Code Refactor</h3>
           <p class="card-text">HTML</p>
         </div>
@@ -116,7 +116,7 @@
     <div class="col-md-4">
       <div class="card p-4" style="width: 18rem;">
         <img src="./Assets/Images/homework2.png" class="card-img-top" alt="...">
-        <div class="card-body">
+        <div class="card-body text-center">
           <h3>Professional Portfolio</h3>
           <p class="card-text">HTML/CSS</p>
         </div>
@@ -125,7 +125,7 @@
     <div class="col-md-4">
       <div class="card p-4" style="width: 18rem;">
         <img src="./Assets/Images/homework3.png" class="card-img-top" alt="...">
-        <div class="card-body">
+        <div class="card-body text-center">
           <h3>Password Generator</h3>
           <p class="card-text">Javascript</p>
         </div>
@@ -134,18 +134,18 @@
     <div class="col-md-4">
       <div class="card p-4" style="width: 18rem;">
         <img src="./Assets/Images/homework4.png" class="card-img-top" alt="...">
-        <div class="card-body">
+        <div class="card-body text-center">
           <h3>Code Quiz</h3>
-          <p class="card-text">Javascript</p>
+          <p class="card-text">Web API</p>
         </div>
       </div>
     </div>
     <div class="col-md-4">
       <div class="card p-4" style="width: 18rem;">
         <img src="./Assets/Images/homework5.png" class="card-img-top" alt="...">
-        <div class="card-body">
+        <div class="card-body text-center">
           <h3>Day Planner</h3>
-          <p class="card-text">Javascript</p>
+          <p class="card-text">Third Party API</p>
         </div>
       </div>
     </div>
@@ -153,6 +153,34 @@
     </div>
   </div>
 </section>
+<!-- contact -->
+<section id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+      <h1 class="fw-bold text-center">Contact</h1>
+      <hr>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+         
+      </section>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- navbar color -->
+<script>
+  window.onscroll = function() {scrollFunction()};
+  function scrollFunction(){
+    if(document.body.scrollTop > 20 || documentElement.scrollTop > 20){
+      document.getElementById("navbar").style.backgroundColor = "white";
+    }else{ document.getElementById("navbar").style.backgroundColor = "transparent";
+
+    }
+  }
+</script>
 
 
 
